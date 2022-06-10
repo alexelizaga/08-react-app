@@ -15,3 +15,6 @@
 64. Compound Component Pattern - Tercer pasos
 65. Separando la lógica en archivos independientes
 66. Asignar componentes a otro componente
+
+## Patrones de componentes - Extensible Styles
+72. Custom className
