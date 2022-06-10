@@ -18,3 +18,7 @@
 
 ## Patrones de componentes - Extensible Styles
 72. Custom className
+73. className en el ProductTitle y ProductImage
+
+# Reglas
+- Ordenar alfabeticamene los atributos ( shift + command/control + p) and Short Lines Ascending.
