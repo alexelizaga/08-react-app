@@ -9,3 +9,4 @@
 38. Rutas estáticas
 39. LazyLoad y Suspense
 40. Cambiar el nombre de los chunks
+41. Nested Lazy Routes
