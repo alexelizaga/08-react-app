@@ -9,3 +9,4 @@
 58. Componente básico tradicional
 59. CustomHook - useProduct
 60. Recibir props al componente hijo
+61. Compound Component Pattern - Primeros pasos
