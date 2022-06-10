@@ -8,3 +8,4 @@
 37. Crear archivo de rutas independiente
 38. Rutas estáticas
 39. LazyLoad y Suspense
+40. Cambiar el nombre de los chunks
