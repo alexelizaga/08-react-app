@@ -7,3 +7,4 @@
 36. Rutas tradicionales - Sin Lazyload
 37. Crear archivo de rutas independiente
 38. Rutas estáticas
+39. LazyLoad y Suspense
