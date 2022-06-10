@@ -13,3 +13,5 @@
 62. Compound Component Pattern - Segundo pasos
 63. Unificar exportación de componentes
 64. Compound Component Pattern - Tercer pasos
+65. Separando la lógica en archivos independientes
+66. Asignar componentes a otro componente
