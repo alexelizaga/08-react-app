@@ -21,6 +21,7 @@
 73. className en el ProductTitle y ProductImage
 74. className en ProductButtons
 75. React CSSProperties
+76. React CSSProperties
 
 # Reglas
 - Rutas anidadas sin lazy loading
