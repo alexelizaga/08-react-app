@@ -6,3 +6,4 @@
 28. Configurar rutas tradicionales - React Router V6
 36. Rutas tradicionales - Sin Lazyload
 57. Patrones de componentes
+58. Componente básico tradicional
