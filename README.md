@@ -10,3 +10,6 @@
 59. CustomHook - useProduct
 60. Recibir props al componente hijo
 61. Compound Component Pattern - Primeros pasos
+62. Compound Component Pattern - Segundo pasos
+63. Unificar exportación de componentes
+64. Compound Component Pattern - Tercer pasos
