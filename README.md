@@ -7,3 +7,4 @@
 36. Rutas tradicionales - Sin Lazyload
 57. Patrones de componentes
 58. Componente básico tradicional
+59. CustomHook - useProduct
