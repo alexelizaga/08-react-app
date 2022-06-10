@@ -8,3 +8,4 @@
 57. Patrones de componentes
 58. Componente básico tradicional
 59. CustomHook - useProduct
+60. Recibir props al componente hijo
