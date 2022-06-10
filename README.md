@@ -19,6 +19,9 @@
 ## Patrones de componentes - Extensible Styles
 72. Custom className
 73. className en el ProductTitle y ProductImage
+74. className en ProductButtons
 
 # Reglas
+- Rutas anidadas sin lazy loading
+- Rutas anidadas con lazy loading y nombres de chunk personalizados
 - Ordenar alfabeticamene los atributos ( shift + command/control + p) and Short Lines Ascending.
