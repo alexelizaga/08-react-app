@@ -5,3 +5,4 @@
 27. Inicio de Proyecto - ReactApp
 28. Configurar rutas tradicionales - React Router V6
 36. Rutas tradicionales - Sin Lazyload
+57. Patrones de componentes
