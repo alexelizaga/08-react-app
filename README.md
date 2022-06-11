@@ -41,3 +41,4 @@
 82. Problema y necesidad del control de propiedades
 83. Estado del carrito de compras
 84. Disparar función personalizada al cambiar estado
+85. Emitir argumentos en nuestro evento
