@@ -4,13 +4,13 @@ import '../styles/custom-styles.css';
 const product = {
   id: '1',
   title: 'Coffee Mug - Card',
-  img: './coffee-mug.png'
+  img: '/assets/coffee-mug.png'
 }
 
 const product2 = {
   id: '2',
   title: 'Coffee Mug - Card',
-  img: './coffee-mug2.png'
+  img: '/assets/coffee-mug2.png'
 }
 
 export const ShoppingPage = () => {
@@ -47,3 +47,5 @@ export const ShoppingPage = () => {
     </div>
   )
 }
+
+export default ShoppingPage;
