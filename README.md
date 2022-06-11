@@ -34,5 +34,8 @@
 74. className en ProductButtons
 75. React CSSProperties
 76. React CSSProperties
-81. Continuación de la sección - COntrol Props
 
+## Patrones de componentes - Control Props
+
+81. Continuación de la sección - Control Props
+82. Problema y necesidad del control de propiedades
