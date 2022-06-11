@@ -4,7 +4,18 @@
 
 27. Inicio de Proyecto - ReactApp
 28. Configurar rutas tradicionales - React Router V6
+
+## LazyLoad
+
 36. Rutas tradicionales - Sin Lazyload
+37. Crear archivo de rutas independiente
+38. Rutas estáticas
+39. LazyLoad y Suspense
+40. Cambiar el nombre de los chunks
+41. Nested Lazy Routes
+
+## Patrones de componentes - Compound Components Pattern
+
 57. Patrones de componentes
 58. Componente básico tradicional
 59. CustomHook - useProduct
@@ -17,9 +28,11 @@
 66. Asignar componentes a otro componente
 
 ## Patrones de componentes - Extensible Styles
+
 72. Custom className
 73. className en el ProductTitle y ProductImage
 74. className en ProductButtons
 75. React CSSProperties
 76. React CSSProperties
 81. Continuación de la sección - COntrol Props
+
