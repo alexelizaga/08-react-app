@@ -50,3 +50,7 @@
 91. Controlando el estado desde el padre
 92. useShoppingCart
 93. Control props alt
+
+## State initializer + Function Child = Render Props - Formik implementation
+
+97. Continuación de la sección
