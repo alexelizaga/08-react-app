@@ -45,3 +45,5 @@
 86. Crear carrito de compras
 87. Mostrar items del carrito de compra
 88. Mantener sincronizado los valores
+89. Sincronizar desde el carrito a las tarjetas principales
+90. Control Props

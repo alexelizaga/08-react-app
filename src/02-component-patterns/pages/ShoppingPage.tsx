@@ -28,8 +28,8 @@ export const ShoppingPage = () => {
   const [ shoppingCart, setShoppingCart ] = useState<{ [key:string]: ProductInCart }>({});
 
   const onProductCountChange = ({ count, product }: { count: number, product: Product}) => {
+    console.log({ count });
     setShoppingCart( oldShoppingCart => {
-      
       if ( count === 0 ) {
         const { [product.id]: toDelete, ...rest } = oldShoppingCart;
         return {
@@ -57,10 +57,11 @@ export const ShoppingPage = () => {
             {
               products.map( product => (
                 <ProductCard
-                  className='bg-dark text-white'
                   key={ product.id }
-                  onChange={ onProductCountChange }
                   product={ product }
+                  className='bg-dark text-white'
+                  onChange={ onProductCountChange }
+                  value={ shoppingCart[product.id]?.count || 0 }
                 >
                   <ProductImage className='custom-image' style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }} />
                   <ProductTitle className='text-bold' />
@@ -75,10 +76,11 @@ export const ShoppingPage = () => {
           {
             Object.entries(shoppingCart).map( ([key,  product]) => (
               <ProductCard
-                className='bg-dark text-white'
                 key={ key }
                 product={ product }
+                className='bg-dark text-white'
                 style={{ width: '100px' }}
+                onChange={ onProductCountChange }
                 value={ product.count }
               >
                 <ProductImage className='custom-image' style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }} />
