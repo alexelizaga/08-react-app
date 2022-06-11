@@ -44,3 +44,4 @@
 85. Emitir argumentos en nuestro evento
 86. Crear carrito de compras
 87. Mostrar items del carrito de compra
+88. Mantener sincronizado los valores
