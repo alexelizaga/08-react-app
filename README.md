@@ -22,11 +22,4 @@
 74. className en ProductButtons
 75. React CSSProperties
 76. React CSSProperties
-
-# Reglas
-- Rutas anidadas sin lazy loading
-- Rutas anidadas con lazy loading y nombres de chunk personalizados
-- Ordenar alfabeticamene los atributos ( shift + command/control + p) and Short Lines Ascending.
-- Ordenar alfabeticamente las importaciones
-- Separar las importaciones en tres bloques ( externas, propias, css/... )
-- Ordenar alfabeticamente las propiedades y luego los métodos en las interfaces
+81. Continuación de la sección - COntrol Props
