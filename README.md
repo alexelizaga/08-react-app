@@ -57,3 +57,4 @@
 98. Implementar la propiedad initialValues
 99. Mostrar el valor inicial e el componente
 100. Utilizar el MaxControl como limitante
+101. Función como hijo de un HOC
