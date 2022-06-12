@@ -23,8 +23,6 @@ export const ProductCard = ({ children, product, className, style, onChange, val
 
     const { counter ,increaseBy } = useProduct({ onChange, product, value, initialValues });
 
-    console.log(initialValues?.count);
-
     return (
         <Provider value={{
             counter,
