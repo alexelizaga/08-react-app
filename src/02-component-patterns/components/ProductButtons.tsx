@@ -17,8 +17,6 @@ export const ProductButtons = ({ className, style }:  Props) => {
       [counter, maxCount],
     );
 
-    console.log({ maxCount })
-
     return (
         <div
             className={ `${styles.buttonsContainer} ${className}` }
