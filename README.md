@@ -61,3 +61,4 @@
 102. Tarea: isMaxCountReaced
 103. Exponer funciones y propiedades fuera del componente
 104. Trabajar con toda la información expuesta como argumento
+108. Preparación de nuestro juego de componentes
