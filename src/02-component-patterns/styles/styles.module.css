@@ -66,3 +66,17 @@
     border-left: 1px solid white !important;
     color: grey !important;
 }
+
+.buttonReset {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 4px;
+    width: 90px;
+}
+
+.buttonReset:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

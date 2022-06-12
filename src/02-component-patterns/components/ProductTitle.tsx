@@ -11,10 +11,11 @@ export interface Props {
 
 export const ProductTitle = ( { title, className, style }: Props ) => {
     const { product } = useContext(ProductContext);
+    console.log( styles.productDescription, className );
 
     return (
         <span
-            className={ `${styles.productTitle} ${className}` }
+            className={ `${styles.productDescription} ${className}` }
             style={ style }
         >
             { title ?? product.title }

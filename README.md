@@ -60,3 +60,4 @@
 101. Función como hijo de un HOC
 102. Tarea: isMaxCountReaced
 103. Exponer funciones y propiedades fuera del componente
+104. Trabajar con toda la información expuesta como argumento
