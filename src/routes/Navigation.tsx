@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route, NavLink, Navigate } from 'react-router-dom';
 
 import logo from '../logo.svg';
-import { LazyPage2, LazyPage3 } from '../01-lazyload/pages';
-import { ShoppingPage } from '../02-component-patterns/pages/ShoppingPage';
+
 
 export const Navigation = () => {
   return (
@@ -13,31 +12,31 @@ export const Navigation = () => {
                 <ul>
                     <li>
                         <NavLink
-                            to='/shopping'
+                            to='/home'
                             className={ ({ isActive }) => isActive ? 'nav-active' : '' }
-                        >Shopping</NavLink>
+                        >Home</NavLink>
                     </li>
                     <li>
                         <NavLink
-                            to='/lazy2'
+                            to='/about'
                             className={ ({ isActive }) => isActive ? 'nav-active' : '' }
-                        >Lazy 2</NavLink>
+                        >About</NavLink>
                     </li>
                     <li>
                         <NavLink
-                            to='/lazy3'
+                            to='/users'
                             className={ ({ isActive }) => isActive ? 'nav-active' : '' }
-                        >Lazy 3</NavLink>
+                        >Users</NavLink>
                     </li>
                 </ul>
             </nav>
 
             <Routes>
-                <Route path='shopping' element={ <ShoppingPage />} />
-                <Route path='lazy2' element={ <LazyPage2 /> } />
-                <Route path='lazy3' element={ <LazyPage3 /> } />
+                <Route path='home' element={ <h1>Home</h1> } />
+                <Route path='about' element={ <h1>About</h1> } />
+                <Route path='users' element={ <h1>Users</h1> } />
 
-                <Route path='/*' element={ <Navigate to="/shopping" replace /> } />
+                <Route path='/*' element={ <Navigate to="/home" replace /> } />
             </Routes>
         </div>
     </BrowserRouter>
