@@ -1,9 +1,7 @@
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 
-import { MyCheckbox } from '../components/MyCheckbox';
-import { MySelect } from '../components/MySelect';
-import { MyTestImput } from '../components/MyTestImput';
+import { MyCheckbox, MyTextInput, MySelect } from '../components';
 
 import '../styles/styles.css';
 
@@ -40,19 +38,19 @@ export const FormikAbstraction = () => {
           {
             (formik) => (
               <Form>
-                <MyTestImput
+                <MyTextInput
                   label="First name"
                   name="firstName"
                   placeholder='First name'
                 />
 
-                <MyTestImput
+                <MyTextInput
                   label="Last name"
                   name="lastName"
                   placeholder='Last name'
                 />
 
-                <MyTestImput
+                <MyTextInput
                   label="Email Adress"
                   name="email"
                   placeholder='Email'
