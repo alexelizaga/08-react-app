@@ -1,74 +1,84 @@
-import { FormEvent } from 'react';
+import { Formik, Form } from 'formik';
+import * as Yup from 'yup';
 
-import { useForm } from '../hooks/useForm';
+import { MyTextInput } from '../components';
 
 import '../styles/styles.css';
 
 export const RegisterFormikPage = () => {
 
-    const {
-        formData, onChange, reset, isValidEmail,
-        name, email, password1, password2
-    } = useForm({
-        name: '',
-        email: '',
-        password1: '',
-        password2: '',
-    });
-
-    const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log( formData );
-    }
-
     return (
         <div>
             <h1>Register Formik Page</h1>
 
-            <form noValidate onSubmit={ onSubmit }>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    value={ name }
-                    name="name"
-                    onChange={ onChange }
-                    className={ `${name.trim().length <= 0 && 'has-error'}` }
-                />
-                { name.trim().length <= 0 && <span>Name is required</span> }
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={ email }
-                    name="email"
-                    onChange={ onChange }
-                    className={ `${ !isValidEmail(email) && 'has-error' }` }
-                />
-                { !isValidEmail(email) && <span>Email is not valid</span> }
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={ password1 }
-                    name="password1"
-                    onChange={ onChange }
-                />
-                { password1.trim().length <= 0 && <span>Password is required</span> }
-                { password1.trim().length < 6 && password1.trim().length > 0 && <span>Password must have at least 6 characters</span> }
+            <Formik
+                initialValues={{
+                    name: '',
+                    email: '',
+                    password1: '',
+                    password2: '',
 
-                <input
-                    type="password"
-                    placeholder="Repeat Password"
-                    value={ password2 }
-                    name="password2"
-                    onChange={ onChange }
-                />
-                { password2.trim().length <= 0 && <span>Password is required</span> }
-                { password2.trim().length > 0  && password1 !== password2 && <span>Password must match</span> }
+                }}
+                onSubmit={ (values) => {
+                    console.log(values);
+                }}
+                validationSchema={
+                    Yup.object({
+                        name: Yup.string()
+                            .min(2, 'Name must be at least 2 characters long')
+                            .max(15, 'Name must be less than 15 characters long')
+                            .required('Required'),
+                        email: Yup.string()
+                            .email('Invalid email address')
+                            .required('Required'),
+                        password1: Yup.string()
+                            .min(6, 'Must be at least 6 characters')
+                            .required('Required'),
+                        password2: Yup.string()
+                            .oneOf([ Yup.ref('password1') ], 'Passwords must match')
+                            .required('Required'),
+                    })
+                }
+            >
+                { 
+                    ({ handleReset }) => (
+                        <Form>
+                            <MyTextInput
+                                label="Name"
+                                name="name"
+                                placeholder='Name'
+                            />
+                            <MyTextInput
+                                label="Email Adress"
+                                name="email"
+                                placeholder='Email'
+                                type='email'
+                            />
 
-                <button type="submit">Create</button>
+                            <MyTextInput
+                                label="Password"
+                                name="password1"
+                                placeholder='Password'
+                                type='password'
+                            />
 
-                <button type="button" onClick={ reset }>Reset</button>
+                            <MyTextInput
+                                label="Confirm password"
+                                name="password2"
+                                placeholder='Password'
+                                type='password'
+                            />
 
-            </form>
+                            <button type="submit">Create</button>
+
+                            <button type="button" onClick={ handleReset }>Reset</button>
+
+                        </Form>
+                    )
+                }
+            </Formik>
+
+            
         </div>
     )
 }
